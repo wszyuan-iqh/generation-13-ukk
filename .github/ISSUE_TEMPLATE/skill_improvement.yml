@@ -1,0 +1,29 @@
+name: Skill improvement
+description: Suggest a workflow, rubric, example, or documentation improvement.
+title: "[Improve]: "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem or opportunity
+      description: What should the skill handle better?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed improvement
+      description: Describe the change you recommend.
+    validations:
+      required: true
+  - type: textarea
+    id: example
+    attributes:
+      label: Example prompt or scenario
+      description: Give a realistic example where this improvement would help.
+  - type: textarea
+    id: risks
+    attributes:
+      label: Risks or tradeoffs
+      description: Note any possible downsides, ambiguity, or safety concerns.
