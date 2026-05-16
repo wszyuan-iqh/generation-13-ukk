@@ -1,0 +1,5 @@
+blank_issues_enabled: true
+contact_links:
+  - name: General discussion
+    url: https://github.com/
+    about: Use GitHub Discussions if enabled on the repository.
