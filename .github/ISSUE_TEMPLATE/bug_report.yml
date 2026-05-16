@@ -1,0 +1,48 @@
+name: Bug report
+description: Report a problem with the skill behavior, metadata, or documentation.
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: textarea
+    id: prompt
+    attributes:
+      label: Prompt or use case
+      description: What did you ask the skill to do?
+      placeholder: Paste the prompt or summarize the use case.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+      description: What should have happened?
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+      description: What happened instead?
+    validations:
+      required: true
+  - type: textarea
+    id: output
+    attributes:
+      label: Relevant output
+      description: Include the smallest useful excerpt. Do not paste private or copyrighted material.
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - Skill trigger or metadata
+        - Topic scoring
+        - Title generation
+        - Image guidance
+        - Source verification
+        - Drafting or rewriting
+        - Final scoring
+        - Documentation
+        - Other
+    validations:
+      required: true
